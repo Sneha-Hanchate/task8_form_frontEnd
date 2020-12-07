@@ -1,0 +1,51 @@
+<div class="container">
+
+<form [formGroup]="qualificationEdit"  (ngSubmit)="quali()" >
+
+        <div class="form-group">
+          <div class="controls">
+              <input type="number"  class="form-control" formControlName="empno"  placeholder="Enter empno" id="perinput2">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text"  class="form-control" formControlName="qualification"  placeholder="Enter Qualification" id="perinput2">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text"  class="form-control" formControlName="institute" placeholder="Enter Institute" id="perinput2">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+             <input type="number"  class="form-control" formControlName="passing_year" placeholder="Enter Passing Year" id="perinput2">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text"  class="form-control" formControlName="score" placeholder="Enter Score" id="perinput2">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text"  class="form-control" formControlName="qualification_area" placeholder="Enter Qualification Area" id="perinput2">
+          </div>
+        </div>
+         <!--<input type="number"  class="form-control" formControlName="empno"  placeholder="Enter empno" id="perinput2">
+          <input type="text"  class="form-control" formControlName="qualification"  placeholder="Enter Qualification" id="perinput2">
+          <input type="text"  class="form-control" formControlName="institute" placeholder="Enter Institute" id="perinput2">
+          <input type="number"  class="form-control" formControlName="passing_year" placeholder="Enter Passing Year" id="perinput2">
+          <input type="text"  class="form-control" formControlName="score" placeholder="Enter Score" id="perinput2">
+          <input type="text"  class="form-control" formControlName="qualification_area" placeholder="Enter Qualification Area" id="perinput2">-->
+
+        <button (click)="quasave()" type="submit" >save</button>
+
+
+        </form>
+
+
+
+</div>
+
+

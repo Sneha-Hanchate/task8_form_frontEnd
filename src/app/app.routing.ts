@@ -1,51 +1,20 @@
-import { Routes, RouterModule } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
-import { LoginComponent } from './login/login.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { RegistrationComponent } from './registration/registration.component';
-import {  AngularformComponent  } from "./angularform/angularform.component";
+import{RouterModule, Routes} from "@angular/router";
+import {BasicinfoComponent} from './basicinfo/basicinfo.component';
+import {BasicinfoeditComponent} from './basicinfo/basicinfoedit/basicinfoedit.component';
+import {PermanantAddresseditComponent} from './basicinfo/permanant-addressedit/permanant-addressedit.component';
+import {PresentAddresseditComponent} from './basicinfo/present-addressedit/present-addressedit.component';
+import {ShowComponent} from './basicinfo/show/show.component';
+import {ShowAllComponent} from './basicinfo/show-all/show-all.component';
+import {QualificationeditComponent} from './basicinfo/qualificationedit/qualificationedit.component';
 
-import { ParentComponent } from './parent/parent.component';
-import { ButtonsComponent } from './buttons/buttons.component';
-
-
-import { DemoComponent } from './demo/demo.component';
-import { ReactiveformComponent } from './reactiveform/reactiveform.component';
-import { FormsComponent } from './forms/forms.component';
-import { ForDemoComponent } from './for-demo/for-demo.component';
-import { ShowtableComponent } from './showtable/showtable.component';
-import { HelloWorldComponent } from './hello-world/hello-world.component';
-import { TodosComponent } from './todos/todos.component';
-import { ProductComponent } from './product/product.component';
-import { EmployeeComponent } from './employee/employee.component';
-import { TaskComponent } from './task/task.component';
-
-
-
-const arr: Routes=[
-
-  {path: 'angularform',component:AngularformComponent},
-  {path: 'parent', component: ParentComponent},
-  {path: 'button', component: ButtonsComponent},
-
-  {path: 'home', component: HomeComponent},
-  {path: 'registration',component: RegistrationComponent},
-  {path: 'login', component: LoginComponent},
-
-  {path: 'demo', component: DemoComponent},
-  {path: 'reactiveform', component: ReactiveformComponent},
-  {path: 'form', component:FormsComponent},
-  {path: 'fordemo', component: ForDemoComponent},
-  {path: 'showtable', component: ShowtableComponent},
-  {path: 'hello', component: HelloWorldComponent},
-  {path: 'todo', component: TodosComponent},
-  {path: 'product',component: ProductComponent},
-  {path:'employee',component: EmployeeComponent},
-  {path: '', component: TaskComponent},
-  {path:'pagenotfound', component: PagenotfoundComponent},
-
- // {path: "**", redirectTo: '/pagenotfound'}
+const arr:Routes=[
+  {path:'',component:BasicinfoComponent},
+  {path:'basicinfo/show',component:ShowComponent},
+  {path:'basicinfo/basicinfoedit/:id',component:BasicinfoeditComponent},
+  {path:'basicinfo/permanant-addressedit/:id1',component:PermanantAddresseditComponent},
+  {path:'basicinfo/present-addressedit/:id2',component:PresentAddresseditComponent},
+  {path:'basicinfo/show-all',component:ShowAllComponent},
+  {path:'basicinfo/qualificationedit/:id3',component:QualificationeditComponent},
 ];
 
-export const arrRouting= RouterModule.forRoot(arr);
-
+export const arrRouting = RouterModule.forRoot(arr);

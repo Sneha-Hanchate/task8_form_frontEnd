@@ -1,0 +1,590 @@
+<div class="container1">
+
+        <form [formGroup]="signupForm"  (ngSubmit)="onSignup()" >
+<p style="color:#00B0FF;font-size:3.5rem;font-weight: bold;font-style: italic;text-align:center;">Basic Form</p>
+
+<div formGroupName="basicadd" class="form-row">
+        <div class="form-group col-md-3 col-6"  id="per">
+        <label style="color:black;font-weight: bold;font-style: italic;">Enter Employee Number</label>
+          <div class="controls">
+              <input type="text" formControlName="empno" placeholder="empno" id="perinput">
+          </div>
+        </div>
+
+
+        <div class="form-group col-md-5 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Title </label>
+          <div class="controls">
+            <input type="text" formControlName="title" placeholder="title" id="perinput" >
+          </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Choose Initial </label>
+          <div class="controls">
+            <input type="text" formControlName="initial" placeholder="initial" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter First Name </label>
+          <div class="controls">
+            <input type="text" formControlName="fname" placeholder="fname" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Middle Name </label>
+          <div class="controls">
+            <input type="text" formControlName="mname" placeholder="mname" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Last Name </label>
+          <div class="controls">
+            <input type="text" formControlName="lname" placeholder="lname" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Choose Gender </label>
+          <div class="controls">
+            <input type="text" formControlName="gender" placeholder="gender" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Date of Birth </label>
+          <div class="controls">
+            <input type="text" formControlName="dob" placeholder="dob" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Age</label>
+          <div class="controls">
+            <input type="text" formControlName="Eage" placeholder="Eage" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Office Phone No.</label>
+          <div class="controls">
+            <input type="text" formControlName="officephone" placeholder="officephone" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Personal Mobile No. </label>
+          <div class="controls">
+            <input type="text" formControlName="personalMobile" placeholder="personalMobile" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-4 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Office Mail </label>
+          <div class="controls">
+            <input type="text" formControlName="officemail" placeholder="officemail" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-4 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Personal Mail 1</label>
+          <div class="controls">
+            <input type="text" formControlName="personalmail1" placeholder="personalmail1" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Enter Personal Mail 2 </label>
+          <div class="controls">
+            <input type="text" formControlName="personalmail2" placeholder="personalmail2" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-4 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Enter Personal Mail 3 </label>
+          <div class="controls">
+            <input type="text" formControlName="personalmail3" placeholder="personalmail3" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">choose Your Photo </label>
+          <div class="controls">
+            <input type="file" formControlName="photo" placeholder="photo" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Birth Place</label>
+          <div class="controls">
+            <input type="text" formControlName="birth" placeholder="birth" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Domicial No </label>
+          <div class="controls">
+            <input type="text" formControlName="domicile" placeholder="domicial" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Religion</label>
+          <div class="controls">
+            <input type="text" formControlName="religion" placeholder="religion" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Caste</label>
+          <div class="controls">
+            <input type="text" formControlName="caste" placeholder="caste" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Choose Nationality </label>
+          <div class="controls">
+            <input type="text" formControlName="nationality" placeholder="nationality" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Over Id </label>
+          <div class="controls">
+            <input type="text" formControlName="overid" placeholder="overid" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Pancard No </label>
+          <div class="controls">
+            <input type="text" formControlName="panno" placeholder="panno" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Adhar No </label>
+          <div class="controls">
+            <input type="text" formControlName="adharno" placeholder="adharno" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Marriage Status </label>
+          <div class="controls">
+            <input type="text" formControlName="marriage" placeholder="marriage" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Child No </label>
+          <div class="controls">
+            <input type="text" formControlName="child" placeholder="child" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Marriage Date </label>
+          <div class="controls">
+            <input type="text" formControlName="date" placeholder="date" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter SName </label>
+          <div class="controls">
+            <input type="text" formControlName="sname" placeholder="sname" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Bank Name </label>
+          <div class="controls">
+            <input type="text" formControlName="bankname" placeholder="bankname" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Account Name </label>
+          <div class="controls">
+            <input type="text" formControlName="accnttype" placeholder="accnttype" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Payment Type</label>
+          <div class="controls">
+            <input type="text" formControlName="paymenttype" placeholder="paymenttype" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-4 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Account No </label>
+          <div class="controls">
+            <input type="text" formControlName="accountno" placeholder="accountno" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-2 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Branch </label>
+          <div class="controls">
+            <input type="text" formControlName="branch" placeholder="branch" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-3 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter IFSC </label>
+          <div class="controls">
+            <input type="text" formControlName="ifsc" placeholder="ifsc" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-4 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter R Bank Name </label>
+          <div class="controls">
+            <input type="text" formControlName="rbanknm" placeholder="rbanknm" id="perinput">
+              </div>
+        </div>
+
+        <div class="form-group col-md-5 col-6"  id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter R Account No</label>
+          <div class="controls">
+            <input type="text" formControlName="raccntno" placeholder="raccntno" id="perinput">
+              </div>
+        </div>
+
+
+
+<button id="perButton1" style="margin-left:40%;" type="submit">Save</button>
+        <button id="perButton2" (click)="basicedit()">edit</button>
+
+        <img id ="pernext" style="margin-left:25%;" src="assets/right-arrow.png"/>
+
+</div><br/><br/>
+
+
+<p style="color:#00B0FF;font-size:3.5rem;font-weight: bold;font-style: italic;text-align:center;">Permanant Address Form</p>
+<div formGroupName="permanantAddress" class="form-row">
+
+        <div class="form-group col-md-3 col-12" id="per">
+        <label style="color:black;font-weight: bold;font-style: italic;">Enter Employee Number</label>
+          <div class="controls">
+              <input type="number" formControlName="empno" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-5 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Permanant Address</label>
+          <div class="controls">
+              <input type="text" formControlName="permanantAdd" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter City</label>
+          <div class="controls">
+              <input type="text" formControlName="city" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Country</label>
+          <div class="controls">
+              <input type="text" formControlName="country" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter State</label>
+          <div class="controls">
+              <input type="text" formControlName="state" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter District</label>
+          <div class="controls">
+              <input type="text" formControlName="district" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Pincode</label>
+          <div class="controls">
+              <input type="text" formControlName="pincode" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Phone1</label>
+          <div class="controls">
+              <input type="text" formControlName="phone1" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Phone2</label>
+          <div class="controls">
+              <input type="text" formControlName="phone2" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Fax</label>
+          <div class="controls">
+              <input type="text" formControlName="fax" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-5 col-12" id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Personal EmailId</label>
+          <div class="controls">
+              <input type="text" formControlName="personalmailId" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+
+        <img id ="pernext" style="margin-left:0%;" src="assets/back.png"/>
+        <button id="perButton1" style="margin-left:30%;" (click)="peraddsave()">Save</button>
+        <button id="perButton2" (click)="peredit()">edit</button>
+
+        <img id ="pernext" style="margin-left:25%;" src="assets/right-arrow.png"/>
+
+</div>
+<p style="color:#00B0FF;font-size:3.5rem;font-weight: bold;font-style: italic;text-align:center;">Present Address Form</p>
+<div formGroupName="presentAddress" class="form-row">
+
+        <div class="form-group col-md-3 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Employee Number</label>
+          <div class="controls">
+              <input type="number" formControlName="empno" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-5 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Present Address</label>
+          <div class="controls">
+              <input type="text" formControlName="presentAdd" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter City</label>
+          <div class="controls">
+              <input type="text" formControlName="pcity" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Country</label>
+          <div class="controls">
+              <input type="text" formControlName="pcountry" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter State</label>
+          <div class="controls">
+              <input type="text" formControlName="pstate" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter District</label>
+          <div class="controls">
+              <input type="text" formControlName="pdistrict" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Pincode</label>
+          <div class="controls">
+              <input type="text" formControlName="ppincode" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Phone No</label>
+          <div class="controls">
+              <input type="text" formControlName="pphone1" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Phone 2 No</label>
+          <div class="controls">
+              <input type="text" formControlName="pphone2" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Fax</label>
+          <div class="controls">
+              <input type="text" formControlName="pfax" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+        <div class="form-group col-md-5 col-12"   id="per">
+          <label style="color:black;font-weight: bold;font-style: italic;">Enter Personal Mail Id</label>
+          <div class="controls">
+              <input type="text" formControlName="ppersonalmailId" placeholder="Your answer" id="perinput">
+          </div>
+        </div>
+
+        <img id ="pernext" style="margin-left:0%;" src="assets/back.png"/>
+        <button id="perButton1" style="margin-left:30%;" (click)="preaddsave()">Save</button>
+        <button id="perButton2" (click)="preedit()">edit</button>
+
+        <img id ="pernext" style="margin-left:25%;" src="assets/right-arrow.png"/>
+
+
+
+</div>
+
+<!-- qualification new add-->
+<p style="color:#00B0FF;font-size:3rem;font-weight: bold;font-style: italic;text-align:center;">Qualification Form</p>
+<div class="form-group" *ngIf="flag1">
+
+      <div class="controlssdfds">
+        <button type="button" class="btn btn-warning" (click)="addqualification()">Add Qualification</button>
+
+        <div formArrayName="user_hobbies" >
+       <div  *ngFor="let item of qualiArray.controls; let i=index;" [formGroupName]="i">
+
+
+
+          <input type="number"  class="form-control" formControlName="empno"  placeholder="Enter empno" id="perinput2">
+          <input type="text"  class="form-control" formControlName="qualification"  placeholder="Enter Qualification" id="perinput2">
+          <p class="lblError" *ngIf="Duplicate(item.get('qualification').value, i)">Repetition not Allowed!...</p>
+
+          <input type="text"  class="form-control" formControlName="institute" placeholder="Enter Institute" id="perinput2">
+          <input type="number"  class="form-control" formControlName="passing_year" placeholder="Enter Passing Year" id="perinput2">
+          <input type="text"  class="form-control" formControlName="score" placeholder="Enter Score" id="perinput2">
+          <input type="text"  class="form-control" formControlName="qualification_area" placeholder="Enter Qualification Area" id="perinput2">
+          <button type="button" class="btn btn-danger btn-sm pull" (click)="onRemoveHobbiesClick(i)"> Remove </button>
+        </div>
+        <div class="row">
+         <img id ="pernext" style="margin-left:0%;" src="assets/back.png"/>
+        <button id="perButton1" style="margin-left:35%;" (click)="next()">Save</button>
+        <img id ="pernext" style="margin-left:31%;" src="assets/right-arrow.png"/>
+        </div>
+
+      </div>
+      </div>
+    </div>
+<!--prevEmp-->
+<p style="color:#00B0FF;font-size:3rem;font-weight: bold;font-style: italic;text-align:center;">Previous Employee Form</p>
+<div class="form-group" *ngIf="flag1">
+
+      <div class="controlssdfds">
+        <button type="button" class="btn btn-warning" (click)="addqualification1()">Add prevEmp</button>
+
+        <div formArrayName="user_hobbies1" >
+       <div  *ngFor="let item of qualiArray1.controls; let i=index;" [formGroupName]="i">
+
+
+
+          <input type="number"  class="form-control" formControlName="empno"  placeholder="Enter empno" id="perinput2">
+          <input type="text"  class="form-control" formControlName="fromDate"  placeholder="Enter fromDate" id="perinput2">
+
+
+          <input type="text"  class="form-control" formControlName="toDate" placeholder="Enter toDate" id="perinput2">
+          <input type="text"  class="form-control" formControlName="company" placeholder="Enter company" id="perinput2">
+          <input type="text"  class="form-control" formControlName="designation" placeholder="Enter designation" id="perinput2">
+          <input type="text"  class="form-control" formControlName="relevant" placeholder="Enter relevant" id="perinput2">
+          <input type="text"  class="form-control" formControlName="nrelevant" placeholder="Enter nrelevant" id="perinput2">
+          <button type="button" class="btn btn-danger btn-sm pull" (click)="onRemoveHobbiesClick1(i)"> Remove </button>
+        </div>
+       <div class="row">
+         <img id ="pernext" style="margin-left:0%;" src="assets/back.png"/>
+        <button id="perButton1" style="margin-left:35%;" (click)="next1()">Save</button>
+        <img id ="pernext" style="margin-left:31%;" src="assets/right-arrow.png"/>
+        </div>
+      </div>
+      </div>
+    </div>
+<!--SKILL-->
+<p style="color:#00B0FF;font-size:3rem;font-weight: bold;font-style: italic;text-align:center;">Skill Form</p>
+<div class="form-group" *ngIf="flag1">
+
+      <div class="controlssdfds">
+        <button type="button" class="btn btn-warning" (click)="addqualification2()">Add Skill</button>
+
+        <div formArrayName="user_hobbies2" >
+       <div  *ngFor="let item of qualiArray2.controls; let i=index;" [formGroupName]="i">
+
+
+
+          <input type="number"  class="form-control" formControlName="empno"  placeholder="Enter empno" id="perinput2">
+          <input type="text"  class="form-control" formControlName="category"  placeholder="Enter category" id="perinput2">
+
+
+          <input type="text"  class="form-control" formControlName="skill" placeholder="Enter skill" id="perinput2">
+          <input type="text"  class="form-control" formControlName="level" placeholder="Enter level" id="perinput2">
+          <input type="text"  class="form-control" formControlName="current" placeholder="Enter current" id="perinput2">
+          <input type="text"  class="form-control" formControlName="experience" placeholder="Enter experience" id="perinput2">
+          <button type="button" class="btn btn-danger btn-sm pull" (click)="onRemoveHobbiesClick2(i)"> Remove </button>
+        </div>
+        <div class="row">
+         <img id ="pernext" style="margin-left:0%;" src="assets/back.png"/>
+        <button id="perButton1" style="margin-left:25%;" (click)="next2()">Save</button>
+        <button id="perButton1" style="margin-left:5%; background-color:#26C6DA; " >SUBMIT</button>
+        <button id="perButton1" style="margin-left:5%; background-color:#26C6DA; " >Don't SUBMIT</button>
+
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+<!--
+    <div class="form-group" *ngIf="flag2">
+      <label>Previous Employment</label>
+      <div class="controlssdds">
+        <button type="button" class="btn btn-warning" (click)=" addqualification1()">Add Previous Employment</button>
+
+        <div formArrayName="user_hobbies1">
+
+        <div  *ngFor="let item1 of qualiArray1.controls; let i=index;" [formGroupName]="i">
+
+          <input type="number" formControlName="empno"  class="form-control" placeholder="empno" >
+        <div formGroupName="fromto">
+          <div>
+
+          <input type="date" formControlName="fromDate"  class="form-control" placeholder="From Date" >
+           <p class="lblError" *ngIf="Duplicate1(item1.get('fromto').get('fromDate').value, i) ">Repetition not Allowed!...</p>
+          </div>
+          <input type="date" formControlName="toDate"  class="form-control" placeholder="To Date" >
+       </div>
+          <input type="text"  class="form-control" formControlName="company" placeholder="Enter Company" >
+          <input type="text"  class="form-control" formControlName="designation" placeholder="Enter Designation" >
+          <label>relavent(yy.mm)</label>
+          <input type="text"  class="form-control" formControlName="relevant" placeholder="Enter Relevant(yy.mm)" >
+           <label>non-relavent(yy.mm)</label>
+          <input type="text"  class="form-control" formControlName="nrelevant" placeholder="Enter Non-Relevant(yy.mm)" >
+          <button type="button" class="btn btn-danger btn-sm pull" (click)="onRemoveHobbiesClick1(i)"> Remove </button>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm pull" (click)="next1()"> Save and Next </button>
+        <button type="button" class="btn btn-success btn-sm pull" (click)="back1()"> Back</button>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="form-group" *ngIf="flag3">
+      <label>Skill Set</label>
+      <div class="controls">
+        <button type="button" class="btn btn-warning" (click)="onAddHobbiesClick2()">Add Skill Set</button>
+
+        <div formArrayName="user_hobbies2" *ngFor="let item of getControl2();let i=index">
+          <input type="number"  class="form-control"  placeholder="empno" >
+          <input type="text"  class="form-control"  placeholder="Skill Categoryy" >
+          <input type="text"  class="form-control"  placeholder="Enter Skill" >
+          <input type="text"  class="form-control"  placeholder="Enter Skill Level" >
+          <input type="text"  class="form-control"  placeholder="Is Current" >
+          <input type="text"  class="form-control"  placeholder="Enter experience" >
+
+          <button type="button" class="btn btn-danger btn-sm pull" (click)="onRemoveHobbiesClick2(i)"> Remove </button>
+        </div>
+
+        <button type="button" class="btn btn-success btn-sm pull" (click)="back2()"> Back </button>
+
+      </div>
+    </div>
+    <div class="form-group" *ngIf="flag4">
+    <button class="btn btn-primary" (click)="submitt()"  > Submit </button>
+    </div>-->
+
+
+<!-- qualification end-->
+        </form>
+
+
+
+</div>
+
+

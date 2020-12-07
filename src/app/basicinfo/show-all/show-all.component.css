@@ -1,0 +1,26 @@
+#btn{
+  /* background-color:#F30056; */
+  color:white;
+  border:none;
+  font-weight:bold;
+  padding:0.5rem;
+  padding-left:2.5rem;
+  padding-right:2.5rem;
+}
+#btn2{
+  /* background-color:#F30056; */
+  color:white;
+  border:none;
+  font-weight:bold;
+  padding:0.5rem;
+  padding-left:2.5rem;
+  padding-right:2.5rem;
+  margin: 2%;
+
+}
+#btn2:hover{
+  /* background-color:#F30056; */
+  color:white;
+  background-color: #8a2be2;
+
+}

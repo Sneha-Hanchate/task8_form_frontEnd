@@ -1,0 +1,72 @@
+<div class="container">
+
+        <form [formGroup]="signupFormperAdEdit"  (ngSubmit)="PerAddEdit()" >
+
+
+        <div class="form-group">
+          <div class="controls">
+              <input type="number" formControlName="empno" placeholder="empno">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="permanantAdd" placeholder="permanantAdd">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="city" placeholder="city">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="country" placeholder="country">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="state" placeholder="state">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="district" placeholder="district">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="pincode" placeholder="pincode">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="phone1" placeholder="phone1">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="phone2" placeholder="phone2">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="fax" placeholder="fax">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <input type="text" formControlName="personalmailId" placeholder="personalmailId">
+          </div>
+        </div>
+
+        <button type="submit" (click)="perSave()" >peraddSave</button>
+
+
+
+        </form>
+
+
+
+</div>
+
+

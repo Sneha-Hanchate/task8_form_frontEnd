@@ -1,0 +1,252 @@
+<h1 style="color:#26C6DA;text-align:center;">Basic Form </h1>
+
+<img src="assets/back.png" routerLink="/basicinfo/show-all" style="width:4rem;"/>
+<table class="tabl table-striped">
+    <thead>
+      <tr>
+        <th>EmpNO</th>
+        <th>Title</th>
+        <th>Initial</th>
+        <th>fname</th>
+        <th>mname</th>
+        <th>lname</th>
+        <th>gender</th>
+        <th>dob</th>
+        <th>age</th>
+        <th>officePh</th>
+        <th>Personal Mo</th>
+        <th>Office mail</th>
+        <th>personal mail1</th>
+        <th>personal mail2</th>
+        <th>personal mail3</th>
+        <th>Photo</th>
+        <th>birth</th>
+        <th>domicial</th>
+        <th>religion</th>
+        <th>caste</th>
+        <th>nationality</th>
+        <th>overid</th>
+        <th>panno</th>
+        <th>adharno</th>
+        <th>marriage</th>
+        <th>child</th>
+        <th>date</th>
+        <th>sname</th>
+        <th>bankname</th>
+        <th>accnttype</th>
+        <th>paymenttype</th>
+        <th>accountno</th>
+        <th>branch</th>
+        <th>ifsc</th>
+        <th>rbanknm</th>
+        <th>raccntno</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let item of arrBasics">
+        <td>{{item.empno}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.initial}}</td>
+        <td>{{item.fname}}</td>
+        <td>{{item.mname}}</td>
+        <td>{{item.lname}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.dob}}</td>
+        <td>{{item.Eage}}</td>
+        <td>{{item.officephone}}</td>
+        <td>{{item.personalMobile}}</td>
+        <td>{{item.officemail}}</td>
+        <td>{{item.personalmail1}}</td>
+        <td>{{item.personalmail2}}</td>
+        <td>{{item.personalmail3}}</td>
+        <td>{{item.photo}}</td>
+        <td>{{item.birth}}</td>
+        <td>{{item.domicile}}</td>
+        <td>{{item.religion}}</td>
+        <td>{{item.caste}}</td>
+        <td>{{item.nationality}}</td>
+        <td>{{item.overid}}</td>
+        <td>{{item.panno}}</td>
+        <td>{{item.adharno}}</td>
+        <td>{{item.marriage}}</td>
+        <td>{{item.child}}</td>
+        <td>{{item.date}}</td>
+        <td>{{item.sname}}</td>
+        <td>{{item.bankname}}</td>
+        <td>{{item.accnttype}}</td>
+        <td>{{item.paymenttype}}</td>
+        <td>{{item.accountno}}</td>
+        <td>{{item.branch}}</td>
+        <td>{{item.ifsc}}</td>
+        <td>{{item.rbanknm}}</td>
+        <td>{{item.raccntno}}</td>
+        <td><button (click)="delbasic(item)">Delete</button></td>
+        <td><button (click)="EditBasic(item)">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<br/><br/><br/><br/>
+<h1 style="color:#26C6DA;text-align:center;">Permanant Address Form </h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>EmpNO</th>
+        <th>permaAdd</th>
+        <th>Coty</th>
+        <th>Country</th>
+        <th>state</th>
+        <th>District</th>
+        <th>Pincode</th>
+        <th>phone1</th>
+        <th>phone2</th>
+        <th>fax</th>
+        <th>personalmailId</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let item of arrPerAdd">
+        <td>{{item.empno}}</td>
+        <td>{{item.permanantAdd}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.country}}</td>
+        <td>{{item.state}}</td>
+        <td>{{item.district}}</td>
+        <td>{{item.pincode}}</td>
+        <td>{{item.phone1}}</td>
+        <td>{{item.phone2}}</td>
+        <td>{{item.fax}}</td>
+        <td>{{item.personalmailId}}</td>
+        <td><button (click)="delper(item)">Delete</button></td>
+        <td><button (click)="EditPerAdd(item)">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/><br/><br/>
+<h1 style="color:#26C6DA;text-align:center;">Present Address Form </h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>EmpNO</th>
+        <th>presentAdd</th>
+        <th>Coty</th>
+        <th>Country</th>
+        <th>state</th>
+        <th>District</th>
+        <th>Pincode</th>
+        <th>phone1</th>
+        <th>phone2</th>
+        <th>fax</th>
+        <th>personalmailId</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let item of arrPreAdd">
+        <td>{{item.empno}}</td>
+        <td>{{item.presentAdd}}</td>
+        <td>{{item.pcity}}</td>
+        <td>{{item.pcountry}}</td>
+        <td>{{item.pstate}}</td>
+        <td>{{item.pdistrict}}</td>
+        <td>{{item.ppincode}}</td>
+        <td>{{item.pphone1}}</td>
+        <td>{{item.pphone2}}</td>
+        <td>{{item.pfax}}</td>
+        <td>{{item.ppersonalmailId}}</td>
+        <td><button (click)="delpre(item)">Delete</button></td>
+        <td><button (click)="EditPreAdd(item)">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+<br/><br/><br/>
+<h1 style="color:#26C6DA;text-align:center;">Qualifiacation Form </h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>EmpNO</th>
+        <th>Qualifiacation</th>
+        <th>Institute</th>
+        <th>passing_year</th>
+        <th>Score</th>
+        <th>Qualifiacation_area</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let item of arrQuali">
+        <td>{{item.empno}}</td>
+        <td>{{item.qualification}}</td>
+        <td>{{item.institute}}</td>
+        <td>{{item.passing_year}}</td>
+        <td>{{item.score}}</td>
+        <td>{{item.qualification_area}}</td>
+        <td><button (click)="delqua(item)">Delete</button></td>
+        <td><button (click)="qua(item)">Edit</button></td>
+        </tr>
+    </tbody>
+  </table>
+
+<br/><br/><br/>
+<h1 style="color:#26C6DA;text-align:center;">Previous Employee Form </h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>EmpNO</th>
+        <th>fromDate</th>
+        <th>toDate</th>
+        <th>company</th>
+        <th>designation</th>
+        <th>relevant</th>
+        <th>nrelevant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let item of arrPrevEmp">
+        <td>{{item.empno}}</td>
+        <td>{{item.fromDate}}</td>
+        <td>{{item.toDate}}</td>
+        <td>{{item.company}}</td>
+        <td>{{item.designation}}</td>
+        <td>{{item.relevant}}</td>
+        <td>{{item.nrelevant}}</td>
+        <td><button (click)="delprev(item)">Delete</button></td>
+        <td><button>Edit</button></td>
+        </tr>
+    </tbody>
+  </table>
+
+
+<br/><br/><br/>
+<h1 style="color:#26C6DA;text-align:center;">Skill Form </h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>EmpNO</th>
+        <th>category</th>
+        <th>skill</th>
+        <th>level</th>
+        <th>current</th>
+        <th>experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let item of arrSkill">
+        <td>{{item.empno}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.skill}}</td>
+        <td>{{item.level}}</td>
+        <td>{{item.current}}</td>
+        <td>{{item.experience}}</td>
+        <td><button (click)="delskill(item)">Delete</button></td>
+        <td><button>Edit</button></td>
+        </tr>
+    </tbody>
+  </table>
+
+

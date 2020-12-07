@@ -1,0 +1,39 @@
+<h1 style="color:#26C6DA;text-align:center;">Form </h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>EmpNO</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>BasicForm</th>
+        <th>PermanantAdd</th>
+        <th>PresentAdd</th>
+        <th>qualification</th>
+        <th>PreviousEmp</th>
+        <th>Skill</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let item of arrBasics">
+        <td>{{item.empno}}</td>
+        <td>{{item.fname}}</td>
+        <td>{{item.lname}}</td>
+        <td><button (click)="basicedit(item)" id="btn"style="background-color:#F30056;">Edit</button></td>
+        <td><button (click)="peerEdit(item)" id="btn"style="background-color:#26C6DA;">Edit</button></td>
+        <td><button (click)="EdditPreAdd(item)" id="btn"style="background-color:#FFC107;">Edit</button></td>
+        <td><button routerLink="/basicinfo/show" id="btn"style="background-color:#B2FF59;">Edit</button></td>
+        <td><button routerLink="/basicinfo/show" id="btn"style="background-color:#1565C0;">Edit</button></td>
+        <td><button routerLink="/basicinfo/show" id="btn"style="background-color:#EA80FC;">Edit</button></td>
+
+        <td><button id="btn"style="background-color:#BCAAA4;" (click)="deleteAll(item)">Delete</button></td>
+
+        </tr>
+    </tbody>
+  </table>
+
+<br/><br/><br/>
+
+<button routerLink="/basicinfo/show" id="btn2" style="background-color:#F48FB1;">Show All Data</button>
+<button routerLink="/" id="btn2" style="background-color:#1DE9B6;">New Registration</button>

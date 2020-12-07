@@ -1,0 +1,72 @@
+#per{
+  border: 1px solid rgb(235, 229, 229);
+  padding: 1.8rem;
+  margin: 1%;
+  background-color: white;
+  border-radius: 5%;
+}
+#perinput{
+  border: none;
+  color:black ;
+  /* color:rgb(235, 229, 229) ; */
+  border-bottom: 1px solid rgb(235, 229, 229);
+  margin-top: 2%;
+  width: 100%;
+}
+#perinput:hover{
+  color: black;
+}
+#pernext{
+  width:9%;
+  float:right;
+}
+
+#basic{
+color:white;
+/* background-color: red; */
+width: 100%;
+padding: 0.4rem;
+margin: 1%;
+background-color: #F30056;
+border: none;
+font-size: larger;
+font-weight: bold;
+font-style: italic;
+border-radius: 5%;
+/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+
+}
+.container1{
+padding-left: 7%;
+padding-right: 7%;
+padding-bottom: 4%;
+background-color: wheat;
+}
+
+#perButton1,#perButton2{
+margin: 2%;
+padding: 1%;
+padding-left: 3%;
+padding-right: 3%;
+color: white;
+background-color: #F30056 ;
+border: none;
+font-size: 1.5rem;
+
+}
+#perButton1:hover,#perButton2:hover{
+  background-color: violet;
+
+}
+
+#perinput2{
+  border: none;
+  color:black ;
+  /* color:rgb(235, 229, 229) ; */
+  border-bottom: 1px solid rgb(235, 229, 229);
+  margin-top: 3px;
+  width: 100%;
+}
+#perinput2:hover{
+  color: black;
+}

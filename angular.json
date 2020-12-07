@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demoapp": {
+    "formFrontEnd": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/demoapp",
+            "outputPath": "dist/formFrontEnd",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -62,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "demoapp:build"
+            "browserTarget": "formFrontEnd:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "demoapp:build:production"
+              "browserTarget": "formFrontEnd:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demoapp:build"
+            "browserTarget": "formFrontEnd:build"
           }
         },
         "test": {
@@ -110,19 +111,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "demoapp:serve"
+            "devServerTarget": "formFrontEnd:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "demoapp:serve:production"
+              "devServerTarget": "formFrontEnd:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "demoapp",
+  "defaultProject": "formFrontEnd",
   "cli": {
-    "analytics": "82de83f1-a367-436d-a485-9b41142884e7"
+    "analytics": "92cf0e20-132f-4a48-9a3d-c8c9bcd95629"
   }
 }
