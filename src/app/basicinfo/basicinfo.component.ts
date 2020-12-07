@@ -18,6 +18,12 @@ import {
   styleUrls: ['./basicinfo.component.css']
 })
 export class BasicinfoComponent implements OnInit {
+  flag1:boolean=true;
+  flag2:boolean=false;
+  flag3:boolean=false;
+  flag4:boolean=false;
+  flag5:boolean=false;
+  flag6:boolean=false;
   signupForm: FormGroup;
   // basicadd: FormGroup;
   empno1:Number;
@@ -40,10 +46,7 @@ ArrPreAddressinterface: PreAddress1[]=[];
 ArrQualification: Qualification[]=[];
 ArrQualificationinterface: Qualification1[]=[];
 
-flag1:boolean=true;
-  flag2:boolean=true;
-  flag3:boolean=true;
-  flag4:boolean=true;
+
 constructor(private _data :BasicdataService, private ang: FormBuilder, private _actroute: ActivatedRoute,
   private _router: Router ) { }
   taskID;
@@ -137,8 +140,9 @@ onSignup(){
     this._data.addForm(this.signupForm.get('basicadd').value).subscribe(
       (x:any)=>{
          if(x.affectedValue==1){
+          alert('Saved Successfully');
           this.arrBasicInfo.push(this.signupForm.get('basicadd').value);
-   alert('Saved Successfully');
+
     console.log('new details', this.signupForm.get('basicadd').value);
 
         }else if(x.code=='ER_DUP_ENTRY'){
@@ -155,8 +159,9 @@ peraddsave(){
     this._data.addPermanantAddress(this.signupForm.get('permanantAddress').value).subscribe(
       (x:any)=>{
          if(x.affectedValue==1){
+          alert('Saved Successfully');
           this.ArrPerAddress.push(this.signupForm.get('permanantAddress').value);
-   alert('Saved Successfully');
+
     console.log('new details', this.signupForm.get('permanantAddress').value);
 
         }else if(x.code=='ER_DUP_ENTRY'){
@@ -175,8 +180,9 @@ preaddsave(){
     this._data.addPresentAddress(this.signupForm.get('presentAddress').value).subscribe(
       (x:any)=>{
          if(x.affectedValue==1){
+          alert('Saved Successfully');
           this.ArrPreAddress.push(this.signupForm.get('presentAddress').value);
-   alert('Saved Successfully');
+
     console.log('new details', this.signupForm.get('presentAddress').value);
 
         }else if(x.code=='ER_DUP_ENTRY'){
@@ -195,6 +201,7 @@ basicedit()
 
   this._data.editForm(this.signupForm.get('basicadd').value).subscribe(
     (x)=>{
+      alert('Update Successfully');
      console.log('abc',this.signupForm.value);
       // this._router.navigate(['/basicinfo']);
     })
@@ -202,6 +209,7 @@ basicedit()
 peredit(){
   this._data.editPermanantAddress(this.signupForm.get('permanantAddress').value).subscribe(
     (x)=>{
+      alert('Update Successfully');
      console.log('abc',this.signupForm.value);
       // this._router.navigate(['/basicinfo']);
     })
@@ -209,6 +217,7 @@ peredit(){
 preedit(){
   this._data.editPresentAddress(this.signupForm.get('presentAddress').value).subscribe(
     (x)=>{
+      alert('Update Successfully');
      console.log('abc',this.signupForm.value);
       // this._router.navigate(['/basicinfo']);
     })
@@ -413,6 +422,100 @@ this.count2++
 }
 
 
+// next or back
+nextT1(){
+  this.flag1=false;
+  this.flag2=true;
+  this.flag3=false;
+  this.flag4=false;
+  this.flag5=false;
+  this.flag6=false;
+
+}
+nextT2(){
+  this.flag1=false;
+  this.flag2=false;
+  this.flag3=true;
+  this.flag4=false;
+  this.flag5=false;
+  this.flag6=false;
+}
+nextT3(){
+  this.flag1=false;
+  this.flag2=false;
+  this.flag3=false;
+  this.flag4=true;
+  this.flag5=false;
+  this.flag6=false;
+
+}
+nextT4(){
+  this.flag1=false;
+  this.flag2=false;
+  this.flag3=false;
+  this.flag4=false;
+  this.flag5=true;
+  this.flag6=false;
+
+}
+nextT5(){
+  this.flag1=false;
+  this.flag2=false;
+  this.flag3=false;
+  this.flag4=false;
+  this.flag5=false;
+  this.flag6=true;
+
+}
+backT2(){
+  this.flag1=true;
+  this.flag2=false;
+  this.flag3=false;
+  this.flag4=false;
+  this.flag5=false;
+  this.flag6=false;
+}
+backT3(){
+  this.flag1=false;
+  this.flag2=true;
+  this.flag3=false;
+  this.flag4=false;
+  this.flag5=false;
+  this.flag6=false;
+}
+backT4(){
+  this.flag1=false;
+  this.flag2=false;
+  this.flag3=true;
+  this.flag4=false;
+  this.flag5=false;
+  this.flag6=false;
+}
+backT5(){
+  this.flag1=false;
+  this.flag2=false;
+  this.flag3=false;
+  this.flag4=true;
+  this.flag5=false;
+  this.flag6=false;
+}
+backT6(){
+  this.flag1=false;
+  this.flag2=false;
+  this.flag3=false;
+  this.flag4=false;
+  this.flag5=true;
+  this.flag6=false;
+}
+FinalSub(){
+  alert('Do you want to submit all forms');
+  this._router.navigate(['/basicinfo/show-all']);
+}
+
+}
+
+
+
 
 
 // qualification_Group1()
@@ -608,4 +711,3 @@ this.count2++
 //   });
 // }
 
-}

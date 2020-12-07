@@ -1,3 +1,6 @@
+.err{
+  color: red;
+}
 #per{
   border: 1px solid rgb(235, 229, 229);
   padding: 1.8rem;
